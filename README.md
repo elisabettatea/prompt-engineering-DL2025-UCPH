@@ -93,6 +93,43 @@ Better than the single-point approach, but less precise than bounding boxes, wit
 
 ---
 
+## 📊 Qualitative Results
+
+### Approach 1: Single Foreground + Background Point
+Minimal point-based prompt. SAM struggles with this approach; masks are incomplete and low quality.
+
+![Single Point 1](plot%20results/segm1-1.png)
+![Single Point 2](plot%20results/segm1-2.png)
+![Single Point 3](plot%20results/segm1-3.png)
+
+---
+
+### Approach 2: Bounding Box Prompts (Selected)
+Bounding boxes for left and right lungs. Masks combined with logical OR. Provides the most accurate segmentation.
+
+![Bounding Boxes](plot%20results/segm2.png)
+
+---
+
+### Approach 3: Multi-Point Prompting (FG + BG)
+Two foreground points + one background point with mask refinement. Improves over single point but less precise than bounding boxes.
+
+![Multi-Point](plot%20results/segm3.png)
+
+---
+
+### Example Cases
+
+**Good case:** predicted mask closely matches ground truth.
+
+![Good Example](plot%20results/qual2.png)
+
+**Suboptimal case:** predicted mask misses parts of lungs and includes some false positives.
+
+![Suboptimal Example](plot%20results/qual1.png)
+
+---
+
 ## 📈 Results & Evaluation
 
 The three prompting strategies were evaluated on the validation set using the F1-score metric.
