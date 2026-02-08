@@ -180,10 +180,9 @@ Open `sam_lung_xrays_1.ipynb` to view the full implementation and visualization 
 
 ## 🎓 Credits
 
-- **Course:** Advanced Deep Learning (2025), University of Copenhagen (UCPH)
+- **Course:**  Deep Learning (2025), University of Copenhagen (UCPH)
 - **Original Notebook Authors:** Jakob Ambsdorf, Mathias Perslev, Stefan Sommer
-- **Implementation:** Your Name
 - **Model:** Segment Anything Model (SAM), Meta AI
 - **Data Source:** van Ginneken et al., *Medical Image Analysis* (2006)
 
-This project is for educational purposes only.
+*This project is for educational purposes only.*
